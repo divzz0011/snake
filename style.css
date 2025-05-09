@@ -1,0 +1,67 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  canvas {
+    background-color: #1a1a1a;
+    display: block;
+    margin: 20px auto;
+    border: 4px solid #00ffcc;
+    box-shadow: 0 0 20px #00ffcc;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: #00ffcc;
+    color: #000;
+    box-shadow: 0 0 10px #00ffcc;
+    cursor: pointer;
+  }
+  
+  .difficulty {
+    margin: 10px 0;
+  }
+  
+  #overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .game-over {
+    background: #222;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ff0044;
+  }
+  
+  .mobile-controls {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .mobile-controls button {
+    background: #00ffcc;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ffcc;
+    margin: 2px;
+  }
+  

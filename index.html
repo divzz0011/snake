@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neon Snake Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🐍 Neon Snake Game</h1>
+
+  <div class="difficulty">
+    Difficulty:
+    <select id="difficulty">
+      <option value="200">Easy</option>
+      <option value="100" selected>Medium</option>
+      <option value="60">Hard</option>
+    </select>
+    <button onclick="startGame()">Start Game</button>
+    <button onclick="togglePause()">Pause</button>
+  </div>
+
+  <canvas id="gameCanvas" width="400" height="400"></canvas>
+  <p>Score: <span id="score">0</span></p>
+
+  <!-- Kontrol Sentuh untuk Mobile -->
+  <div class="mobile-controls">
+    <button onclick="setDirection('up')">⬆️</button>
+    <div>
+      <button onclick="setDirection('left')">⬅️</button>
+      <button onclick="setDirection('down')">⬇️</button>
+      <button onclick="setDirection('right')">➡️</button>
+    </div>
+  </div>
+
+  <div id="overlay">
+    <div class="game-over">
+      <h2>Game Over</h2>
+      <p>Your Score: <span id="finalScore">0</span></p>
+      <button onclick="hideOverlay()">OK</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
